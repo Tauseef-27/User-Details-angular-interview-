@@ -1,0 +1,10 @@
+<div mat-dialog-content>
+  <p>hello</p>
+  <p *ngFor='let user of UserData'>
+    {{user.email}}
+ </p>
+
+  <div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  </div>
+</div>
